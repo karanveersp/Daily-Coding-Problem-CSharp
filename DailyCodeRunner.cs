@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 
+using DailyCode.BinaryTree;
+
 namespace DailyCode
 {
     public static class Runner
@@ -12,6 +14,9 @@ namespace DailyCode
 
             // ProductArrayExcludingI(new List<int>{1,2,3,4,5}).ForEach(i => Console.Write($"{i} "));
             // Console.WriteLine();
+
+            Node node = Node.Deserialize("A B C D # # #");
+            Console.WriteLine(node);
         }
 
         public static List<int> ProductArrayExcludingI(List<int> arr) {
